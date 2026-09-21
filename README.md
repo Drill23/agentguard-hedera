@@ -11,7 +11,7 @@ HCS is the coordination and ordering layer, not decorative logging. An executor 
 Prerequisites: Node.js 20.18.3+, Git and a Hedera testnet account with HBAR.
 
 ```bash
-npm create scaffold-hbar@latest my-agentguard -- --template Drill23/agentguard-hedera
+npx create-scaffold-hbar@latest my-agentguard --template Drill23/agentguard-hedera
 cd my-agentguard
 cp packages/nextjs/.env.example packages/nextjs/.env
 npm install
