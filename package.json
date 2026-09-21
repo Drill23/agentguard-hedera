@@ -1,0 +1,25 @@
+{
+  "name": "agentguard-hedera",
+  "version": "0.0.1",
+  "private": true,
+  "workspaces": [
+    "packages/nextjs"
+  ],
+  "scripts": {
+    "format": "npm run --workspace @agentguard/nextjs format",
+    "lint": "npm run --workspace @agentguard/nextjs lint",
+    "test": "npm run --workspace @agentguard/nextjs test",
+    "next:build": "npm run --workspace @agentguard/nextjs build",
+    "next:check-types": "npm run --workspace @agentguard/nextjs check-types",
+    "next:dev": "npm run --workspace @agentguard/nextjs dev",
+    "next:start": "npm run --workspace @agentguard/nextjs dev",
+    "self-check": "node scripts/self-check.mjs"
+  },
+  "devDependencies": {
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10"
+  },
+  "engines": {
+    "node": ">=20.18.3"
+  }
+}

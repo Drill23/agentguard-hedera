@@ -1,0 +1,34 @@
+{
+  "name": "@agentguard/nextjs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "check-types": "tsc --noEmit --incremental",
+    "dev": "next dev",
+    "format": "prettier --write . '!(node_modules|.next)/**/*'",
+    "lint": "eslint . --max-warnings 0",
+    "serve": "next start",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@hiero-ledger/sdk": "^2.80.0",
+    "next": "^15.2.8",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "latest",
+    "@types/node": "^20.17.0",
+    "@types/react": "^19.0.7",
+    "eslint": "^9.23.0",
+    "eslint-config-next": "^15.2.3",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-prettier": "^5.2.4",
+    "postcss": "^8.4.45",
+    "prettier": "^3.5.3",
+    "tailwindcss": "^4.1.3",
+    "typescript": "^5.8.2",
+    "vitest": "^2.1.9"
+  }
+}

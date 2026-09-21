@@ -1,0 +1,43 @@
+{
+  "name": "agentguard",
+  "description": "Human approval gates for sensitive AI-agent actions using HCS and Mirror Node evidence.",
+  "create-scaffold-hbar": {
+    "capabilities": {
+      "frontend": [
+        "nextjs-app"
+      ],
+      "solidityFramework": [
+        "none"
+      ],
+      "packageManager": [
+        "npm"
+      ]
+    },
+    "defaults": {
+      "frontend": "nextjs-app",
+      "solidityFramework": "none",
+      "packageManager": "npm"
+    },
+    "outro": {
+      "sections": [
+        {
+          "title": "AgentGuard setup",
+          "steps": [
+            {
+              "label": "Copy the environment file",
+              "text": "packages/nextjs/.env.example \u2192 packages/nextjs/.env"
+            },
+            {
+              "label": "Create a testnet HCS topic",
+              "text": "Set AGENTGUARD_TOPIC_ID and keep operator secrets out of git."
+            },
+            {
+              "label": "Start AgentGuard",
+              "command": "{run:next:dev}"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
