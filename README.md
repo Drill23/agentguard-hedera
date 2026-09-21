@@ -20,6 +20,8 @@ npm run next:dev
 
 Open `http://localhost:3000`. The local verifier at `/verify` demonstrates payload binding without needing credentials.
 
+For a two-minute walkthrough with screenshots and verified testnet links, see [DEMO.md](DEMO.md).
+
 ## Configure Hedera testnet
 
 Set these only in `packages/nextjs/.env`. Never commit that file.
