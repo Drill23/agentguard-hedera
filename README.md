@@ -61,7 +61,14 @@ npm run next:dev
 
 ## Evidence
 
-Before bounty submission, this section will include one testnet HCS transaction and its HashScan or Mirror Node URL. Do not replace it with a local or testnet-looking placeholder.
+Verified Hedera testnet evidence:
+
+- HCS topic: https://hashscan.io/testnet/topic/0.0.10652713
+- Topic creation transaction: https://hashscan.io/testnet/transaction/0.0.10650574-1790018058-780075269
+- Test-fixture message transaction: https://hashscan.io/testnet/transaction/0.0.10650574-1790018075-281060274
+- Mirror Node message API: https://testnet.mirrornode.hedera.com/api/v1/topics/0.0.10652713/messages
+
+The on-chain message is explicitly labeled `agentguard.test-fixture` and `approvedBy: AgentGuard test fixture`; it is proof of the template integration, not a representation of a real human approval.
 
 ## Architecture
 
