@@ -23,4 +23,4 @@ Add tests for any protocol change. Run `npm run next:check-types`, `npm run lint
 
 ## Safe extension ideas
 
-Add approver signatures, delegated policies, pagination, topic partitioning, authentication and idempotent downstream adapters. Do not add automatic approval, default-allow fallbacks, or secrets to HCS payloads.
+Add approver signatures, delegated policies, topic partitioning, authentication and idempotent downstream adapters. Do not add automatic approval, default-allow fallbacks, or secrets to HCS payloads.

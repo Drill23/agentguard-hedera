@@ -85,7 +85,7 @@ The on-chain message is explicitly labeled `agentguard.test-fixture` and `approv
 - Approval must cover recipient, amount, body and any other field that changes the effect.
 - Nonces must be unique for the action scope.
 - Short expirations limit stale approval risk.
-- The demo reads the latest 100 topic messages. Production deployments should page the Mirror Node API or partition topics before that bound can omit relevant history.
+- Mirror Node history is paged in consensus order with a 10,000-message safety bound. Production deployments with larger shared topics should partition topics or use an indexed store so verification remains bounded.
 - A public HCS topic exposes envelope metadata. Put secrets neither in actions nor envelopes. Hashing predictable secrets does not make them safe.
 
 ## License
